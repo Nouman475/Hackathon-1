@@ -1,0 +1,39 @@
+#task{
+    border-radius: 8px;
+    background-color: rgba(103, 168, 225, 0.21);
+    height: 70px; 
+    position: relative;
+    margin: 1.2rem 0rem;
+}
+#taskName,#taskDue,#taskCreatedAt{
+    position: absolute;
+    font-size: larger;
+}
+#taskName{
+    top: 20px;
+    left: 10px;
+}
+#taskDue{
+    top: 20px;
+    left: 100px;
+}
+#taskCreatedAt{
+    top: 20px;
+    left: 180px;
+} 
+main{
+   min-height: 83vh;
+}
+
+@media (max-width:560px) {
+    #task{
+        display: flex;
+        position: static;
+        height: 90px;
+        flex-direction: column;
+    }#taskName,#taskDue,#taskCreatedAt{
+        position: static;
+        font-size: small;
+        padding: 5px;
+    }
+}
